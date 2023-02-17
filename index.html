@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristián Javier</title>
+
+    <!-- ====================LINK CSS==================== -->
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- ==================== FONT AWESOME ICON ===================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- ========================GOOGLE FONTS======================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==================================SWIPERJS======================= -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" data-tilt>
+        <img src="./assets/img/me.png" alt="profilecard" />
+        <h2>Cristián Javier Ferreira Pérez.</h2>
+        <p>Santiago de Chile, Ñuñoa.</p>
+        <div class="links">
+          <a
+            href="https://www.instagram.com/ferreira.8390/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/cristi%C3%A1n-ferreira-664241227/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://t.me/Cferreirap"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
+        </div>
+      </div>      
+    </div>   
+
+    <div class="aboutme">
+        <h4>
+            Mis Habilidades (My Skills).
+        </h4>
+    </div>
+    <div class="skills">
+        <i class="fa-brands fa-html5" data-tilt></i>
+        <i class="fa-brands fa-css3-alt" data-tilt></i>
+        <i class="fa-brands fa-github" data-tilt></i>
+        <i class="fa-brands fa-bootstrap" data-tilt></i>
+        <i class="fa-brands fa-square-js" data-tilt></i>
+    </div> 
+
+  
+
+
+    <!-- ===============SWIPER CUBE================ -->
+    <div class="myworks"><h4>Trabajos (Works)</h4></div>
+    <div class="spin"><p>Gira el cubo! (Spin the cube)</p></div>
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="https://ferreira1990.github.io/Yogazuli/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/yogazuli.jpg" alt="trabajo-de-yoga"></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://ferreira1990.github.io/Calculadora/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/calculadora.jpg" alt=""></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://ferreira1990.github.io/Panaderia-Emilia/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/panaderiaemilia.jpg" alt=""></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="https://ferreira1990.github.io/IguanaPage/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/iguana.jpg" alt="pagina-de-iguanas"></a>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<div class="footer"></div>
+
+    
+  
+    <script src="./assets/js/vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type=""text/javascript>
+    
+    <!-- Initialize Swiper -->  
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  
+
+    </script>
+    
+  </body>
+</html>
+
+
