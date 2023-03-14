@@ -15,13 +15,14 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 100%;
-  height: 100vh;
+.container { 
+  margin-top: 60px ;
+  width: 100%;  
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+  justify-content: center;   
+  
+  
 }
 
 /* =============================================================CARD====================================================== */
@@ -41,16 +42,22 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
 }
+
 .card h2 {
   font-size: 35px;
   font-weight: 700;
   margin-top: 20px;
 }
 .card p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
   margin: 10px auto;
-  max-width: 330px;
+  
+}
+
+span{
+  color: rgb(209, 109, 255);
+  font-weight: bold;
 }
 .card .links i {
   color: white;
@@ -59,16 +66,44 @@ body {
   border-radius: 10%;
   transition: background 0.5s;
 }
-.card .links i:hover {
-  background: #b300ff;
+
+.custom-insta{
+  background-color: rgb(184, 17, 17);
+  
+}
+
+.custom-linked{
+  background-color: rgb(55, 115, 255);
+}
+
+.custom-tele{
+  background-color: rgb(14, 177, 241);
+}
+
+.custom-insta:hover {
+  background-color: rgb(255, 120, 3);
+  font-weight: bold;
+  
+}
+
+.custom-linked:hover{
+  background-color: rgb(162, 0, 232);
+  font-weight: bold;
+}
+
+.custom-tele:hover{
+  background-color: rgb(255, 0, 174);
+  font-weight: bold;
 }
 
 /* ============================================================ABOUTME====================================================== */
 
 .aboutme {
+  margin-top: 100px ;
   display: grid;
   place-items: center;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .aboutme h4 {
@@ -81,6 +116,9 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 55px;
+  margin-bottom: 80px;
+
+
 }
 .skills i {
   color: white;
@@ -93,8 +131,24 @@ body {
   cursor: pointer;
 }
 
+.custom-html{
+  background-color: red;
+}
+
+.custom-css{
+  background-color: rgb(1, 85, 255);
+}
+
+.custom-boot{
+  background-color: rgb(212, 0, 255);
+}
+
+.custom-js{
+  background-color: rgb(255, 196, 0);
+}
+
 .skills i:hover {
-  background: #bb00ff;
+  background: #0000004c;
 }
 
 /* =====================TRABAJOS WORKS====================== */
@@ -109,6 +163,7 @@ body {
   color: white;
   font-size: 40px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .spin {
@@ -122,6 +177,7 @@ body {
   color: white;
   font-size: 15px;
   letter-spacing: 8px;
+  margin-bottom: 30px;
 }
 
 /* ====================SWIPER CUBE============================== */
@@ -164,17 +220,3 @@ body {
 
 
 
-/* ===============CUSTOMIZE SCROLLBAR================ */
-
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  background: #000000;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#000000, #00f7ff, #7f51fdfc, #7300ff);
-  border-radius: 10px;
-}

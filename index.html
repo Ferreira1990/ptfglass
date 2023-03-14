@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cristián Javier</title>
 
+    <!-- LINK AOS SHADE -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- ====================LINK CSS==================== -->
 
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -32,55 +35,56 @@
   </head>
   <body>
     <div class="container">
-      <div class="card" data-tilt>
+      <div class="card">
         <img src="./assets/img/me.png" alt="profilecard" />
         <h2>Cristián Javier Ferreira Pérez.</h2>
+        <p>Desarrollador <span>Front-end</span></p>
         <p>Santiago de Chile, Ñuñoa.</p>
         <div class="links">
           <a
             href="https://www.instagram.com/ferreira.8390/"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-instagram"></i
+            ><i class="custom-insta fa-brands fa-instagram"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/cristi%C3%A1n-ferreira-664241227/"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin"></i
+            ><i class="custom-linked fa-brands fa-linkedin"></i
           ></a>
           <a
             href="https://t.me/Cferreirap"
             target="_blank"
             rel="noopener noreferrer"
-            ><i class="fa-brands fa-telegram"></i
+            ><i class="custom-tele fa-brands fa-telegram"></i
           ></a>
         </div>
       </div>      
     </div>   
 
     <div class="aboutme">
-        <h4>
+        <h4 data-aos="zoom-in">
             Mis Habilidades (My Skills).
         </h4>
     </div>
     <div class="skills">
-        <i class="fa-brands fa-html5" data-tilt></i>
-        <i class="fa-brands fa-css3-alt" data-tilt></i>
-        <i class="fa-brands fa-github" data-tilt></i>
-        <i class="fa-brands fa-bootstrap" data-tilt></i>
-        <i class="fa-brands fa-square-js" data-tilt></i>
+        <i class="custom-html fa-brands fa-html5" data-aos="slide-down"></i>
+        <i class="custom-css fa-brands fa-css3-alt" data-aos="slide-left"></i>
+        <i class="fa-brands fa-github" data-aos="zoom-in"></i>
+        <i class="custom-boot fa-brands fa-bootstrap" data-aos="slide-right"></i>
+        <i class="custom-js fa-brands fa-square-js" data-aos="slide-down"></i>
     </div> 
 
   
 
 
     <!-- ===============SWIPER CUBE================ -->
-    <div class="myworks"><h4>Trabajos (Works)</h4></div>
-    <div class="spin"><p>Gira el cubo! (Spin the cube)</p></div>
+    <div class="myworks"><h4 data-aos="zoom-in">Trabajos (Works)</h4></div>
+    <div class="spin"><p data-aos="slide-up">Gira el cubo! (Spin the cube)</p></div>
 
  <!-- Swiper -->
- <div class="swiper mySwiper">
+ <div class="swiper mySwiper" data-aos="zoom-in-up">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <a href="https://ferreira1990.github.io/vonblack/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/vplotz.jpg" alt="trabajo-de-yoga"></a>
@@ -105,7 +109,7 @@
 
     
   
-    <script src="./assets/js/vanilla-tilt.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type=""text/javascript>
     
@@ -125,8 +129,18 @@
     });
   
 
-    </script>    
+    </script> 
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 900
+      });
+    </script>
   </body>
 </html>
+
+
 
 
