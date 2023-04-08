@@ -96,6 +96,44 @@ span{
   font-weight: bold;
 }
 
+/* ABOUTME---------------------------------------------------------------------------------------------------------------- */
+
+.myself{
+  width: 100%;
+  display: block;
+  margin-top: 40px;
+  
+
+}
+
+.myself h4{
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  
+}
+
+.myself p{
+
+  color: rgb(239, 239, 239);
+  text-align: center;  
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 300;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ============================================================ABOUTME====================================================== */
 
 .aboutme {
@@ -117,9 +155,8 @@ span{
   justify-content: center;
   padding-bottom: 55px;
   margin-bottom: 80px;
-
-
 }
+
 .skills i {
   color: white;
   font-size: 40px;
