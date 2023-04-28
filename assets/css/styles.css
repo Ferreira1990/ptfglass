@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 body {
@@ -15,14 +15,12 @@ body {
   padding: 0;
 }
 
-.container { 
-  margin-top: 60px ;
-  width: 100%;  
+.container {
+  margin-top: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;   
-  
-  
+  justify-content: center;
 }
 
 /* =============================================================CARD====================================================== */
@@ -52,11 +50,10 @@ body {
   font-size: 20px;
   font-weight: 300;
   margin: 10px auto;
-  
 }
 
-span{
-  color: rgb(209, 109, 255);
+span {
+  color: rgb(152, 0, 246);
   font-weight: bold;
 }
 .card .links i {
@@ -67,77 +64,60 @@ span{
   transition: background 0.5s;
 }
 
-.custom-insta{
+.custom-insta {
   background-color: rgb(184, 17, 17);
-  
 }
 
-.custom-linked{
+.custom-linked {
   background-color: rgb(55, 115, 255);
 }
 
-.custom-tele{
+.custom-tele {
   background-color: rgb(14, 177, 241);
 }
 
 .custom-insta:hover {
   background-color: rgb(255, 120, 3);
   font-weight: bold;
-  
 }
 
-.custom-linked:hover{
+.custom-linked:hover {
   background-color: rgb(162, 0, 232);
   font-weight: bold;
 }
 
-.custom-tele:hover{
+.custom-tele:hover {
   background-color: rgb(255, 0, 174);
   font-weight: bold;
 }
 
 /* ABOUTME---------------------------------------------------------------------------------------------------------------- */
 
-.myself{
+.myself {
   width: 100%;
   display: block;
   margin-top: 40px;
-  
-
 }
 
-.myself h4{
+.myself h4 {
   font-size: 40px;
   color: white;
   text-align: center;
   font-weight: 600;
-  
 }
 
-.myself p{
-
+.myself p {
   color: rgb(239, 239, 239);
-  text-align: center;  
+  text-align: center;
   padding: 30px;
   font-size: 18px;
   font-weight: 300;
-
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ============================================================ABOUTME====================================================== */
 
 .aboutme {
-  margin-top: 100px ;
+  margin-top: 100px;
   display: grid;
   place-items: center;
   text-align: center;
@@ -168,19 +148,19 @@ span{
   cursor: pointer;
 }
 
-.custom-html{
+.custom-html {
   background-color: red;
 }
 
-.custom-css{
+.custom-css {
   background-color: rgb(1, 85, 255);
 }
 
-.custom-boot{
+.custom-boot {
   background-color: rgb(212, 0, 255);
 }
 
-.custom-js{
+.custom-js {
   background-color: rgb(255, 196, 0);
 }
 
@@ -201,6 +181,7 @@ span{
   font-size: 40px;
   text-align: center;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .spin {
@@ -235,25 +216,110 @@ span{
   width: 100%;
 }
 
-
-
-.footer{
-  width: 100%;
-  height: 300px;
+.swiper-pagination-bullet-active {
+  background-color: #6900c5 !important;
+  --swiper-pagination-bullet-size: 8px;
 }
 
+/* --------------contact------------------------------------------ */
+.contactformtitle {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.contactformtitle h4 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
 
+.contact {
+  min-height: 100vh;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.contact > div {
+  background: rgba(132, 132, 132, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  padding: 2.5em;
+  border-radius: 20px;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
+}
 
+.contact h1 {
+  font-size: 2.5em;
+  color: white;
+}
 
+.contact form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
 
+.contact input,
+.contact textarea {
+  border: none;
+  padding: 0.8em;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0.5em 0 1em 0;
+  font-size: 1.1em;
+  background: #eee;
+  color: #6900c5;
+}
 
+.contact label {
+  color: #ffffff;
+}
 
+.contact textarea {
+  resize: none;
+  height: 8em;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+}
 
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #bababa;
+}
 
+.contact button {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.8em;
+  background-color: rgb(167, 40, 253);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
 
+.contact button:hover {
+  background-color: rgb(91, 0, 152);
+  border-radius: 30px;
+  transition: all 0.5s;
+}
 
+.spancustomcolor {
+  color: rgb(145, 66, 248);
+}
 
-
-
+@media screen and (max-width: 500px) {
+  .contact {
+    font-size: 14px;
+  }
+}

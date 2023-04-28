@@ -20,18 +20,23 @@
     />
 
     <!-- ========================GOOGLE FONTS======================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- ==================================SWIPERJS======================= -->
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
+
+<!-- CDN DE EMAILJS-------------------------------------- -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {    
+      emailjs.init('bGvdSN4Lr2q4ifxPU');
+  })();
+</script>
   </head>
   <body>
     <div class="container">
@@ -63,7 +68,7 @@
       </div>      
     </div> 
     
-    <div class="myself"><h4 data-aos="slide-down"> Acerca de mí (About me)</h4>
+    <div class="myself"><h4 data-aos="slide-down"> Acerca de mí (About Me)</h4>
     <p data-aos="zoom-in">Desarrollador Front-end, amante del diseño, la creatividad y la tecnología. <br>
        Me encuentro en constante aprendizaje y manteniéndome al tanto de las últimas tendencias en <br> 
        diseño, desarrollo web y tecnología, para poder mejorar continuamente en mis capacidades y trabajos. <br>
@@ -87,15 +92,12 @@
 
 
     <!-- ===============SWIPER CUBE================ -->
-    <div class="myworks"><h4 data-aos="zoom-in">Trabajos (Works)</h4></div>
+    <div class="myworks"><h4 data-aos="zoom-in">Trabajos (My Jobs)</h4></div>
     <div class="spin"><p data-aos="slide-up">Gira el cubo! (Spin the cube)</p></div>
 
  <!-- Swiper -->
  <div class="swiper mySwiper" data-aos="zoom-in-up">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <a href="https://ferreira1990.github.io/cuppon/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/cuppon.jpg" alt="trabajo-de-cuppon"></a>
-    </div>
+  <div class="swiper-wrapper">    
     <div class="swiper-slide">
       <a href="https://ferreira1990.github.io/login/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/login.jpg" alt="pagina-login"></a>
     </div>
@@ -123,11 +125,51 @@
     <div class="swiper-slide">
       <a href="https://ferreira1990.github.io/IguanaPage/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/iguana.jpg" alt="pagina-de-iguanas"></a>
     </div>
+    <div class="swiper-slide">
+      <a href="https://ferreira1990.github.io/cuppon/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/cuppon.jpg" alt="trabajo-de-cuppon"></a>
+    </div>
   </div>
   <div class="swiper-pagination"></div>
 </div>
 
-<div class="footer"></div>
+<div class="contactformtitle" data-aos="slide-down"><h4>Contacto (Get In Touch)</h4></div>
+
+<section class="contact" data-aos="zoom-in-up">
+  <div>
+    <h1>Envíame un mensaje</h1>    
+    <form id="contact-form">
+      <!-- Nombre------------------ -->
+      <label for="user_name"><span class="spancustomcolor">00.</span> Nombre:</label>
+      <input
+      name="name"
+      type="text"
+      id="user_name"      
+      placeholder="Tu nombre.."
+      required
+      />
+      <!-- Email------------ -->
+      <label for="user_email"><span class="spancustomcolor">01.</span> Email:</label>
+      <input 
+      type="email"
+      id="user_email"
+      name="email"
+      placeholder="Ejemplo@gmail.com"
+      required
+      />
+      <!-- mensaje---------------- -->
+      <label for="message"><span class="spancustomcolor">02.</span> Mensaje:</label>
+      <textarea
+       name="message"
+       id="message"
+       placeholder="Escribe tu mensaje aquí.."
+       required
+       ></textarea>
+       <!-- SUBMIT ----------------------- -->
+       <button id="submit-btn" type="submit" class="submit-btn">Enviar</button>
+    </form>
+    
+  </div>  
+</section>
 
 
     
@@ -159,6 +201,8 @@
         duration: 900
       });
     </script>
+    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/js/main.js">
   </body>
 </html>
 
