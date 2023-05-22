@@ -3,6 +3,7 @@ const submitBtn = document.querySelector("#submit-btn");
 const nameInput = document.querySelector("#user_name");
 const emailInput = document.querySelector("#user_email");
 const messageInput = document.querySelector("#message");
+
 // const parrafo = document.querySelector("#text-hoverjs")     EJEMPLO DE OVERMOUSE;
 
 const publicKey = "bGvdSN4Lr2q4ifxPU";
@@ -37,6 +38,9 @@ contactForm.addEventListener("submit", (e) => {
   );
 });
 
+
+
+
 // EJEMPLO DE OVERMOUSE
 // parrafo.addEventListener("mouseover", (event) => {
 //   parrafo.innerHTML = "Hola qué tal";
@@ -45,3 +49,16 @@ contactForm.addEventListener("submit", (e) => {
 // parrafo.addEventListener("mouseleave", (event) => {
 //     parrafo.innerHTML = "Chaooo pescaooo"
 // })
+
+
+let menus = document.querySelector(".navbar");
+let menus_btn = document.querySelector(".menu-btn");
+let close_btn = document.querySelector(".close-btn");
+
+menus_btn.addEventListener("click", function () {
+  menus.classList.add("active2");
+});
+
+close_btn.addEventListener("click", function () {
+  menus.classList.remove("active2");
+});

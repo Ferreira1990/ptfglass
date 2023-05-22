@@ -39,7 +39,25 @@
 </script>
   </head>
   <body>
-    <div class="container">
+    
+    <header>
+      <a href="#" class="logo"><img src="./assets/img/logo.png" alt=""></a>
+      <nav class="navbar">
+        <div class="btn">
+          <i class="fas fa-times close-btn" style="color: #782bff"></i>
+        </div>
+        <a href="#a" class="active">Home</a>
+        <a href="#b">About</a>
+        <a href="#c">Skills</a>
+        <a href="#d">Works</a>
+        <a href="#e">Contact</a>
+      </nav>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn" style="color: #782bff"></i>
+      </div>
+    </header>
+    
+    <div class="container" id="a">
       <div class="card">
         <img src="./assets/img/me.png" alt="profilecard" />
         <h2>Cristián Javier Ferreira Pérez.</h2>
@@ -68,14 +86,14 @@
       </div>      
     </div> 
     
-    <div class="myself"><h4 data-aos="slide-down"> Acerca de mí (About Me)</h4>
+    <div class="myself" id="b"><h4 data-aos="slide-down"> Acerca de mí (About Me)</h4>
     <p data-aos="zoom-in">Desarrollador Front-end, amante del diseño, la creatividad y la tecnología. <br>
        Me encuentro en constante aprendizaje y manteniéndome al tanto de las últimas tendencias en <br> 
        diseño, desarrollo web y tecnología, para poder mejorar continuamente en mis capacidades y trabajos. <br>
        También, amo trabajar en conjunto  y soy capaz de hacerlo eficazmente e ir 
     aportando grandes ideas para poder realizar un gran trabajo. </p></div>
 
-    <div class="aboutme">
+    <div class="aboutme" id="c">
         <h4 data-aos="zoom-in">
             Mis Habilidades (My Skills).
         </h4>
@@ -92,7 +110,7 @@
 
 
     <!-- ===============SWIPER CUBE================ -->
-    <div class="myworks"><h4 data-aos="zoom-in">Trabajos (My Jobs)</h4></div>
+    <div class="myworks" id="d"><h4 data-aos="zoom-in">Trabajos (My Jobs)</h4></div>
     <div class="spin"><p data-aos="slide-up">Gira el cubo! (Spin the cube)</p></div>
 
  <!-- Swiper -->
@@ -132,7 +150,7 @@
   <div class="swiper-pagination"></div>
 </div>
 
-<div class="contactformtitle" data-aos="slide-down"><h4>Contacto (Get In Touch)</h4></div>
+<div class="contactformtitle" data-aos="slide-down" id="e"><h4>Contacto (Get In Touch)</h4></div>
 
 <section class="contact" data-aos="zoom-in-up">
   <div>
