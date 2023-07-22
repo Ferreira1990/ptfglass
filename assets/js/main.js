@@ -62,3 +62,23 @@ menus_btn.addEventListener("click", function () {
 close_btn.addEventListener("click", function () {
   menus.classList.remove("active2");
 });
+
+
+// ----------------------------FUNCION DE BOTONES TRADUCTOR---------------------------------
+
+function ESP() {
+  document.getElementById("Espbtn").classList.add("myself");
+  document.getElementById("Espbtn").innerHTML = `Desarrollador Front-end, amante del diseño, la creatividad y la tecnología.
+  Me encuentro en constante aprendizaje y manteniéndome al tanto de las últimas tendencias en
+  diseño, desarrollo web y tecnología, para poder mejorar continuamente en mis capacidades y trabajos.
+   También, amo trabajar en conjunto y soy capaz de hacerlo eficazmente e ir aportando grandes ideas
+   para poder realizar un gran trabajo.`;
+}
+
+function ENG(){
+  document.getElementById("Espbtn").classList.add("myself");
+  document.getElementById("Espbtn").innerHTML = `Front-end Developer, passionate about design, creativity, and technology.
+   I am consistently engaged in learning and staying abreast of the latest trends in design,
+    web development, and technology to continuously enhance my skills and output.
+   Moreover, I thrive in collaborative environments, effectively contributing impactful ideas to deliver exceptional results.` 
+}
