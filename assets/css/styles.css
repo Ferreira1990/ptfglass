@@ -361,7 +361,7 @@ span {
 .swiper {
   width: 300px;
   height: 300px;
-  position: absolute;
+  position: absolute; 
 }
 
 .swiper-slide {
